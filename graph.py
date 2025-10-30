@@ -3,7 +3,7 @@ import matplotlib as mpl
 import matplotlib.pyplot as plt
 import pandas as pd
 
-csv = pd.read_csv('helium spectrum.csv')
+csv = pd.read_csv('helium spectrum 2.csv')
 
 # Grabbing the values from the data table
 wl = np.array(csv['Wavelength '])
@@ -35,7 +35,7 @@ plt.plot(sin_fit, wl_fit, linestyle = '-', label = 'Linearized helium Spectrum D
 
 # Aesthetics of the Graph
 plt.xlabel("sin θ", fontsize=16)
-plt.ylabel("Wavelength λ (mm) ", fontsize=16)
+plt.ylabel("Wavelength λ (nm) ", fontsize=16)
 plt.xticks(fontsize=14, color= (23/2551, 84/255, 128/255))
 plt.yticks(fontsize=16, color="purple")
 plt.legend(loc='best', prop={'size': 10})
